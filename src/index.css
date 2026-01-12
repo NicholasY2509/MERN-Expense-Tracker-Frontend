@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@import "tailwindcss";
+@plugin 'tailwindcss-animate';
+
+@theme {
+    --font-display: 'Plus Jakarta Sans', sans-serif;
+    --breakpoint-3xl: 1920px;
+    --color-primary: #0703d4;
+}
+
+@layer base {
+    html {
+        @apply scroll-smooth;
+        font-family: var(--font-display);
+    }
+
+    body {
+        background-color: #fcfbfc;
+        overflow-x: hidden;
+    }
+}
